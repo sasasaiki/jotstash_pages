@@ -1,14 +1,14 @@
 ---
-title: Privacy Policy | Bodogen
+title: Privacy Policy | JotStash
 ---
 
 # Privacy Policy
 
-**App: Bodogen (ボドゲン)**
+**App: JotStash**
 **Provider: Saiki Iijima**
 **Last updated: September 9, 2026**
 
-Saiki Iijima ("the developer") provides Bodogen, a turn timer and resource tracking app for board games ("the App"). This policy explains how information is handled in the App. By using the App you agree to the practices described here.
+Saiki Iijima ("the developer") provides JotStash, a turn timer and resource tracking app for board games ("the App"). This policy explains how information is handled in the App. By using the App you agree to the practices described here.
 
 ## 1. Information the developer collects directly
 

@@ -1,14 +1,14 @@
-# bodogen_pages
+# jotstash_pages
 
-ボードゲーム向け手番タイマー & リソース管理アプリ **ボドゲン（Bodogen）** の公開ページ用リポジトリです。
-`sasasaiki/mttask_pages` をクローンして作成しました。
+ボードゲーム向け手番タイマー & リソース管理アプリ **JotStash** の公開ページ用リポジトリです。
+`sasasaiki/bodogen_pages` をクローンして作成しました。
 
 ## 構成
 
 `main` ブランチのルートを GitHub Pages で公開します。
 
 ```
-CNAME          bodogen-prapori.saiki.app
+CNAME          jotstash-prapori.saiki.app
 _config.yml    Jekyll 設定（テーマ: cayman）
 index.md       トップページ
 privacy.md     プライバシーポリシー（日本語）
@@ -19,9 +19,9 @@ privacy-en.md  Privacy Policy (English)
 
 | ページ | URL |
 | --- | --- |
-| トップ | https://bodogen-prapori.saiki.app/ |
-| プライバシーポリシー（日本語） | https://bodogen-prapori.saiki.app/privacy |
-| Privacy Policy (English) | https://bodogen-prapori.saiki.app/privacy-en |
+| トップ | https://jotstash-prapori.saiki.app/ |
+| プライバシーポリシー（日本語） | https://jotstash-prapori.saiki.app/privacy |
+| Privacy Policy (English) | https://jotstash-prapori.saiki.app/privacy-en |
 
 ストアへの登録先:
 
@@ -36,9 +36,9 @@ privacy-en.md  Privacy Policy (English)
 - Settings → Pages
   - Source: `Deploy from a branch`
   - Branch: `main` / `/ (root)`
-  - Custom domain: `bodogen-prapori.saiki.app`
+  - Custom domain: `jotstash-prapori.saiki.app`
   - 証明書が発行されたら `Enforce HTTPS` を有効化
-- DNS（`saiki.app`）: CNAME `bodogen-prapori` → `sasasaiki.github.io`（Cloudflare の場合は Proxy を DNS only に）
+- DNS（`saiki.app`）: CNAME `jotstash-prapori` → `sasasaiki.github.io`（Cloudflare の場合は Proxy を DNS only に）
 
 ## ポリシー本文について
 
