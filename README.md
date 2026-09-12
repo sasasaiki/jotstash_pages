@@ -42,14 +42,18 @@ privacy-en.md  Privacy Policy (English)
 
 ## ポリシー本文について
 
-本アプリは以下を前提に記述しています。
+本アプリの実装（`pubspec.yaml` の依存）に合わせて、以下を前提に記述しています。
 
 - 保存先: 端末内 + 利用者自身の GitHub リポジトリ（Personal Access Token 認証、トークンは端末の安全な保存領域）
-- SDK: Google Play Services / AdMob / Firebase Analytics / Crashlytics
+- 第三者サービス: **GitHub のみ**
+- 広告SDK・解析SDK・クラッシュレポートSDK: **なし**（AdMob / Firebase Analytics / Crashlytics / Google Play Services いずれも未使用）
 - カメラ利用なし
 
-**SDK構成や同期方式を変更したら、本文（3章 ログデータ・4章 GitHub連携・5章 第三者サービス・6章 広告）と、
+**広告・解析・クラッシュレポートのSDKを導入したり、同期方式を変えたりしたら、
+本文（1章 収集する情報・3章 GitHub連携・4章 第三者サービス・9章 通信）と、
 App Store の App Privacy / Google Play のデータセーフティの申告を必ず揃えてください。**
+実装に無いサービスを「利用している」と書くこと自体がストア審査で問題になるため、
+**実測（`pubspec.yaml` の依存）と本文が一致していることを毎リリース確認すること。**
 特にストア申告では「ユーザーコンテンツ（メモ）が第三者（GitHub）へ送信される」点の記載を忘れないこと。
 
 更新は `privacy.md` / `privacy-en.md` を編集して push すれば数分で反映されます。
