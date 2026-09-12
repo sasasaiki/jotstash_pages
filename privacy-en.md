@@ -6,33 +6,36 @@ title: Privacy Policy | JotStash
 
 **App: JotStash**
 **Provider: Saiki Iijima**
-**Last updated: September 9, 2026**
+**Last updated: September 12, 2026**
 
-Saiki Iijima ("the developer") provides JotStash, a turn timer and resource tracking app for board games ("the App"). This policy explains how information is handled in the App. By using the App you agree to the practices described here.
+Saiki Iijima ("the developer") provides JotStash, a note-taking app ("the App"). The App stores your notes on your device and can synchronise them with a GitHub repository that you own. This policy explains how information is handled in the App. By using the App you agree to the practices described here.
 
 ## 1. Information the developer collects directly
 
 **The developer does not collect information that directly identifies you** — name, email address, phone number, postal address, and the like.
 
-The App has no account and no sign-in. Nothing you enter in the App is sent to a server operated by the developer, because the developer operates no server.
+The App has no developer-provided account and no sign-in. Nothing you write in the App is sent to a server operated by the developer, because the developer operates no server.
+
+Notes are synchronised to a GitHub repository that you specify. The developer has no access to that repository and cannot read or retrieve your notes. See section 4.
 
 However, the App uses the third-party services listed below (advertising, analytics and crash reporting), and those services automatically collect information that may identify you. See sections 3 and 5.
 
-## 2. Information stored on your device only
+## 2. Information stored on your device
 
-To provide its features, the App stores the following **on your device only**. None of it is sent to the developer or to any third party.
+To provide its features, the App stores the following **on your device**. None of it is sent to the developer.
 
 | Stored data | Purpose |
 | --- | --- |
-| Player names | Display during turns; reuse in later sessions |
-| Timer settings such as time limits | Restoring your previous setup |
-| Resource definitions, counts, and change history | Resource tracking |
-| Scoring rules | Automatic score calculation |
+| Note bodies and titles | Creating, viewing and editing notes; offline use |
+| Folders, tags and other organisation data | Organising and searching notes |
+| Sync target settings (repository, branch, path, etc.) | Remembering where to synchronise |
+| Your GitHub Personal Access Token | Authenticating with GitHub (kept in the device's secure storage) |
+| Sync state and history | Determining differences and performing sync |
 | Display preferences | Keeping your chosen settings |
 
 This data is removed when you uninstall the App. It can also be deleted individually from within the App.
 
-Player names are free text. Whether to enter a real name is up to you, but we recommend not entering personal information you don't need.
+Notes are free text. Whether to enter a real name, contact details or other identifying information is up to you, but we recommend not entering personal or sensitive information you don't need.
 
 ## 3. Log Data
 
@@ -45,15 +48,28 @@ While you use the App — particularly if an error occurs — information called
 - Statistics about how the App is used
 - Diagnostic information such as stack traces from crashes
 
-Log Data is used only to identify and fix defects and to improve the quality of the App. The developer does not use it to identify individuals.
+Log Data is used only to identify and fix defects and to improve the quality of the App. Log Data never includes the content of your notes. The developer does not use it to identify individuals.
 
-## 4. Camera use
+## 4. GitHub integration
 
-The App uses the camera **solely to scan QR codes**.
+The App saves and synchronises your notes to a repository in your own GitHub account. Please note the following about this integration.
 
-- The camera feed is used only to decode QR codes; no photos or videos are saved.
-- Neither the camera feed nor anything derived from it is sent to the developer or any third party.
-- Camera permission is requested only when you use the QR scanning feature. All other features remain fully available if you decline.
+**How the connection works**
+
+- You connect by entering a Personal Access Token ("token") that you generate in GitHub.
+- The token is stored **only in secure storage on your device** (the iOS Keychain / Android encrypted storage) and is never sent to the developer or to any other third party.
+- The token is sent to the GitHub API solely to read from and write to the repository you specified.
+
+**What is transmitted**
+
+- When you synchronise, your note bodies, titles and organisation data are sent to GitHub as files and recorded in the repository's commit history.
+- They are sent only to the repository you specified. Nothing passes through a developer-operated server.
+
+**Please be aware**
+
+- **If you make the repository Public, anyone can read your notes.** Always use a Private repository for anything you want to keep confidential.
+- Data stored on GitHub is handled, retained and deleted according to GitHub's terms and privacy statement. You can delete it yourself from GitHub. Note that because of how Git works, content may remain in the commit history even after deletion.
+- To disconnect, delete the token in the App or revoke it in GitHub.
 
 ## 5. Third-party services
 
@@ -61,12 +77,15 @@ The App uses the following third-party services. Each collects and uses informat
 
 | Service | Purpose | Privacy policy |
 | --- | --- | --- |
+| GitHub | Storing and synchronising notes to the repository you specify | [Link](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement) |
 | Google Play Services | Platform for Google services | [Link](https://www.google.com/policies/privacy/) |
 | Google AdMob | In-app advertising | [Link](https://support.google.com/admob/answer/6128543?hl=en) |
 | Google Analytics for Firebase | Usage analytics | [Link](https://firebase.google.com/policies/analytics) |
 | Firebase Crashlytics | Crash and defect diagnostics | [Link](https://firebase.google.com/support/privacy/) |
 
-These services may obtain advertising identifiers (IDFA on iOS, Advertising ID on Android), device information, and app usage data. The developer receives only aggregated, non-identifying data from them.
+The Google services may obtain advertising identifiers (IDFA on iOS, Advertising ID on Android), device information, and app usage data. The developer receives only aggregated, non-identifying data from them.
+
+Only the note data you choose to synchronise is sent to GitHub, and the developer does not receive it.
 
 The developer does not sell or rent your information to any third party beyond the services listed above.
 
@@ -81,6 +100,8 @@ If you prefer not to see personalized ads, you can disable this in your device s
 
 These settings do not remove advertising itself; ads simply stop being based on your interests.
 
+The content of your notes is never used to target advertising.
+
 ## 7. Cookies and similar technologies
 
 Cookies are small data files commonly used as anonymous unique identifiers. The App does not use cookies directly, but third-party code and libraries used by the App may use cookies or similar technologies to improve their services. You can accept or refuse them through your device or browser settings. If you refuse, some parts of the service may not work.
@@ -89,7 +110,7 @@ Cookies are small data files commonly used as anonymous unique identifiers. The 
 
 Collected information is used only to:
 
-- Provide and maintain the App's features
+- Provide and maintain the App's features, including storing notes and synchronising them with the GitHub repository you specify
 - Identify and fix defects and improve quality
 - Understand usage in order to plan improvements
 - Deliver advertising and measure its performance
@@ -106,6 +127,8 @@ The developer does not disclose, sell or rent collected information to third par
 
 Information stored on your device is erased when you uninstall the App or delete it from within the App.
 
+Notes already synchronised to GitHub are **not** deleted when you uninstall the App. If you no longer want them, you must delete them yourself on GitHub.
+
 Data held by third-party services is retained according to those services' own policies. For deletion requests, contact the relevant service provider or the developer.
 
 ## 11. Children's privacy
@@ -114,11 +137,11 @@ The App is not directed at children under 13. The developer does not knowingly c
 
 ## 12. Network use
 
-The App's core features — the turn timer, resource tracking, scoring and QR code sharing — run on your device and work offline. An internet connection is used for displaying advertising and for sending analytics and crash reports.
+Core features — creating, viewing, editing and searching notes — run on your device and work offline. An internet connection is used for synchronising with GitHub, for displaying advertising, and for sending analytics and crash reports.
 
 ## 13. Data security
 
-The developer uses commercially acceptable means to protect your information. However, no method of transmission over the internet or of electronic storage is 100% secure, and absolute security cannot be guaranteed.
+The developer uses commercially acceptable means to protect your information. Communication with GitHub uses an encrypted connection (HTTPS), and your token is kept in the device's secure storage. However, no method of transmission over the internet or of electronic storage is 100% secure, and absolute security cannot be guaranteed.
 
 ## 14. Changes to this policy
 

@@ -1,6 +1,6 @@
 # jotstash_pages
 
-ボードゲーム向け手番タイマー & リソース管理アプリ **JotStash** の公開ページ用リポジトリです。
+メモアプリ **JotStash**（メモを利用者自身の GitHub リポジトリに同期）の公開ページ用リポジトリです。
 `sasasaiki/bodogen_pages` をクローンして作成しました。
 
 ## 構成
@@ -42,8 +42,14 @@ privacy-en.md  Privacy Policy (English)
 
 ## ポリシー本文について
 
-本アプリは Google Play Services / AdMob / Firebase Analytics / Crashlytics を利用する前提で記述しています。
-**SDK構成を変更したら、本文（3章 ログデータ・5章 第三者サービス・6章 広告）と、
+本アプリは以下を前提に記述しています。
+
+- 保存先: 端末内 + 利用者自身の GitHub リポジトリ（Personal Access Token 認証、トークンは端末の安全な保存領域）
+- SDK: Google Play Services / AdMob / Firebase Analytics / Crashlytics
+- カメラ利用なし
+
+**SDK構成や同期方式を変更したら、本文（3章 ログデータ・4章 GitHub連携・5章 第三者サービス・6章 広告）と、
 App Store の App Privacy / Google Play のデータセーフティの申告を必ず揃えてください。**
+特にストア申告では「ユーザーコンテンツ（メモ）が第三者（GitHub）へ送信される」点の記載を忘れないこと。
 
 更新は `privacy.md` / `privacy-en.md` を編集して push すれば数分で反映されます。
