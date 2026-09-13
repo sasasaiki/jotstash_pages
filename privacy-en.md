@@ -6,7 +6,7 @@ title: Privacy Policy | JotStash
 
 **App: JotStash**
 **Provider: Saiki Iijima**
-**Last updated: September 12, 2026**
+**Last updated: September 13, 2026**
 
 Saiki Iijima ("the developer") provides JotStash, a note-taking app ("the App"). The App stores your notes on your device and can synchronise them with a GitHub repository that you own. This policy explains how information is handled in the App. By using the App you agree to the practices described here.
 
@@ -27,9 +27,10 @@ To provide its features, the App stores the following **on your device**. None o
 
 | Stored data | Purpose |
 | --- | --- |
-| Note bodies and titles | Creating, viewing and editing notes; offline use |
-| Folders, tags and other organisation data | Organising and searching notes |
-| Sync target settings (repository, branch, path, etc.) | Remembering where to synchronise |
+| Note bodies | Creating, viewing and editing notes; offline use |
+| Tags | Organising and searching notes |
+| Reminder schedules (the time to notify, and the content of the note it points to) | Delivering local notifications at the time you set |
+| Sync target settings (repository, destination path, date format) | Remembering where to synchronise |
 | Your GitHub Personal Access Token | Authenticating with GitHub (kept in the device's secure storage) |
 | Sync state and history | Determining differences and performing sync |
 | Display preferences | Keeping your chosen settings |
@@ -50,7 +51,7 @@ The App saves and synchronises your notes to a repository in your own GitHub acc
 
 **What is transmitted**
 
-- When you synchronise, your note bodies, titles and organisation data are sent to GitHub as files and recorded in the repository's commit history.
+- When you synchronise, your note bodies and tags are sent to GitHub as Markdown files and recorded in the repository's commit history.
 - They are sent only to the repository you specified. Nothing passes through a developer-operated server.
 
 **Please be aware**
