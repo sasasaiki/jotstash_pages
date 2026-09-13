@@ -110,6 +110,8 @@ Information stored on your device is erased when you uninstall the App or delete
 
 Notes already synchronised to GitHub are **not** deleted when you uninstall the App. If you no longer want them, you must delete them yourself on GitHub. Retention of data held by GitHub is governed by GitHub's own policies.
 
+Retention of data held by the advertising and purchase management services (Google AdMob / RevenueCat) is governed by those services' own policies. For deletion requests, contact the relevant service provider or the developer.
+
 ## 9. Children's privacy
 
 The App is not directed at children under 13. The developer does not collect personal information from children. Note that the App displays advertising; if you are a parent or guardian who would prefer no ads to be shown, purchasing "Remove ads" in the App's settings will stop them. Please contact the developer with any concerns.
