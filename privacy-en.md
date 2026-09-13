@@ -12,14 +12,15 @@ Saiki Iijima ("the developer") provides JotStash, a note-taking app ("the App").
 
 ## 1. Information the developer collects
 
-**The developer collects no information about you whatsoever.**
+**The developer never obtains the contents of your notes.**
 
 - The App has no developer-provided account and no sign-in.
-- The developer operates no server, and nothing you write in the App is sent to the developer.
-- The App does not serve advertising, does not perform usage analytics, and does not send crash reports. It contains no third-party service or SDK for any of these purposes.
-- The App does not obtain advertising identifiers (IDFA on iOS, Advertising ID on Android).
+- The developer operates no server, and the notes you write in the App are never sent to the developer.
+- The App performs no usage analytics and sends no crash reports.
 
-The only time the App communicates with the outside world is when it synchronises with the GitHub repository you configure. See section 3.
+However, the App **displays advertising** so that it can be offered free of charge, and the ad provider automatically collects information about your device. The App also uses a **purchase management service** for the in-app purchase that removes advertising. See sections 5 and 6.
+
+From these third-party services the developer receives only aggregated figures that cannot identify an individual, such as impression counts and the number of purchases.
 
 ## 2. Information stored on your device
 
@@ -62,54 +63,72 @@ The App saves and synchronises your notes to a repository in your own GitHub acc
 
 ## 4. Third-party services
 
-GitHub is the only third-party service the App uses.
+The App uses the third-party services below. Each service handles information according to its own privacy policy.
 
 | Service | Purpose | Privacy policy |
 | --- | --- | --- |
 | GitHub | Storing and synchronising notes to the repository you specify | [Link](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement) |
+| Google AdMob | Serving advertising in the App | [Link](https://support.google.com/admob/answer/6128543?hl=en) |
+| RevenueCat | Processing the ad-removal purchase and tracking its status | [Link](https://www.revenuecat.com/privacy) |
 
-Only the note data you choose to synchronise is sent to GitHub, and the developer does not receive it. GitHub's handling of that information is governed by GitHub's own privacy statement.
+Only the note data you choose to synchronise is sent to GitHub, and the developer does not receive it.
 
-The App uses no advertising network, no analytics service and no crash reporting service. The developer does not sell or rent your information to anyone.
+**The contents of your notes are never used for advertising or for processing purchases.** No note data is passed to the advertising or purchase services.
 
-## 5. How information is used
+The developer does not sell or rent your information to anyone.
 
-Information stored on your device is used only to:
+## 5. Advertising
 
-- Provide and maintain the App's features
-- Synchronise with the GitHub repository you specify
+The App displays advertising through Google AdMob. To deliver and measure ads, AdMob may collect your advertising identifier (IDFA on iOS, Advertising ID on Android), information such as device type and OS version, and data about ad impressions and taps.
 
-Your information is never used for advertising, usage analysis, or any other purpose.
+**If you do not want personalised advertising**, you can change this in your device settings.
 
-## 6. Sharing of information
+- **iOS**: Choose "Ask App Not to Track" on the tracking prompt shown at first launch, or change it later under Settings → Privacy & Security → Tracking.
+- **Android**: Go to Settings → Google → Ads and opt out of Ads Personalisation, or delete your advertising ID.
 
-The developer holds no information about you and therefore discloses, sells or rents nothing to third parties.
+These settings do not remove advertising itself; ads simply stop being based on your interests.
+
+**If you prefer no advertising at all**, you can purchase "Remove ads" from the App's settings. It is a one-time purchase, after which no ads are shown.
+
+## 6. Purchases
+
+Ad removal is a one-time purchase made through the App Store or Google Play.
+
+- Payment is processed by the App Store / Google Play. **Neither the App nor the developer ever receives your payment details, such as credit card numbers.**
+- RevenueCat is used to manage purchase status. It stores an anonymous identifier used to associate the purchase with your device or account, along with records such as the product purchased and the time of purchase. You cannot be personally identified from this identifier.
+- After changing devices or reinstalling, you can carry your purchase over with "Restore purchases" in the App.
+
+## 7. Sharing of information
+
+The developer holds none of your note content and therefore discloses, sells or rents none of it to third parties.
 
 Your note data leaves your device only to reach the GitHub repository you chose as the sync target.
 
-## 7. Retention and deletion
+## 8. Retention and deletion
 
 Information stored on your device is erased when you uninstall the App or delete it from within the App.
 
 Notes already synchronised to GitHub are **not** deleted when you uninstall the App. If you no longer want them, you must delete them yourself on GitHub. Retention of data held by GitHub is governed by GitHub's own policies.
 
-## 8. Children's privacy
+## 9. Children's privacy
 
-The App is not directed at children under 13. Because the developer collects no information from any user, no personal information is obtained from children under 13 either. Parents and guardians with concerns are welcome to contact the developer.
+The App is not directed at children under 13. The developer does not collect personal information from children. Note that the App displays advertising; if you are a parent or guardian who would prefer no ads to be shown, purchasing "Remove ads" in the App's settings will stop them. Please contact the developer with any concerns.
 
-## 9. Network use
+## 10. Network use
 
-Core features — creating, viewing, editing and searching notes — run on your device and work offline. An internet connection is used only when synchronising with GitHub.
+Core features — creating, viewing, editing and searching notes — run on your device and work offline. An internet connection is used to synchronise with GitHub, to fetch and display advertising, and to check purchase status.
 
-## 10. Data security
+If you have purchased ad removal and have not set up GitHub sync, the App makes no network requests relating to your notes at all.
+
+## 11. Data security
 
 The developer uses commercially acceptable means to protect your information. Communication with GitHub uses an encrypted connection (HTTPS), and your token is kept in the device's secure storage. However, no method of transmission over the internet or of electronic storage is 100% secure, and absolute security cannot be guaranteed.
 
-## 11. Changes to this policy
+## 12. Changes to this policy
 
 This policy may be revised in line with changes in law or in the App's features. Revisions take effect when posted on this page. Significant changes will be announced in the app's release notes. We recommend reviewing this page periodically.
 
-## 12. Contact
+## 13. Contact
 
 For questions or requests regarding this policy or the App, please contact:
 
